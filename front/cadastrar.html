@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Filme/Série</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cadastrar Filme ou Série</h2>
+        <div id="mensagem"></div>
+        <form id="formCadastro" action="../back/cadastro.php" method="post">
+            <div class="input-groupd">
+                <label for="titulo">Título:</label>
+                <input type="text" name="titulo" id="titulo" placeholder="Digite o título..." required>
+
+                <label for="tipo">Tipo:</label>
+                <select name="tipo" id="tipo" required>
+                    <option value="">Selecione...</option>
+                    <option value="filme">Filme</option>
+                    <option value="serie">Série</option>
+                </select>
+
+                <label for="genero">Gênero:</label>
+                <input type="text" name="genero" id="genero" placeholder="Ex: Ação, Comédia..." required>
+
+                <label for="data_lancamento">Data de lançamento:</label>
+                <input type="date" name="data_lancamento" id="data_lancamento">
+
+                <label for="capa">Capa (link da imagem):</label>
+                <input type="text" name="capa" id="capa" placeholder="URL da imagem da capa...">
+
+                <label for="trailer">Link do trailer:</label>
+                <input type="text" name="trailer" id="trailer" placeholder="URL do trailer no YouTube...">
+
+                <label for="avaliacao">Avaliação (0 a 10):</label>
+                <input type="number" name="avaliacao" id="avaliacao" min="0" max="10" step="0.1" placeholder="0 a 10">
+
+                <label for="sinopse">Sinopse:</label>
+                <textarea name="sinopse" id="sinopse" placeholder="Digite a sinopse..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Salvar</button>
+            <button type="button" class="btn-secondary" onclick="window.location.href = '../index.html' ">Voltar</button>
+        </form>
+    </div>
+    <script src="cadastrar.js"></script>
+</body>
+</html>
