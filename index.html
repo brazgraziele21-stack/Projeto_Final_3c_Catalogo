@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes e Séries</title>
+    <link rel="stylesheet" href="front/style.css">
+</head>
+<body>
+    <div class="controles">
+        <button onclick="window.location.href = 'front/cadastrar.html' ">Cadastrar Novo</button>
+        <input type="text" id="campoFiltro" placeholder="Pesquisar por título...">
+        <select id="filtroTipo">
+            <option value="">Todos</option>
+            <option value="filme">Filmes</option>
+            <option value="serie">Séries</option>
+        </select>
+    </div>
+
+    <div class="containerCards"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
