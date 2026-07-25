@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Filme/Série</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Detalhes</h2>
+        <div id="mensagem"></div>
+
+        <div class="detalhes-item">
+            <img id="detCapa" src="" alt="Capa" />
+            <h3 id="detTitulo"></h3>
+            <p><strong>Tipo:</strong> <span id="detTipo"></span></p>
+            <p><strong>Gênero:</strong> <span id="detGenero"></span></p>
+            <p><strong>Data de lançamento:</strong> <span id="detData"></span></p>
+            <p><strong>Avaliação:</strong> <span id="detAvaliacao"></span></p>
+            <p><strong>Sinopse:</strong></p>
+            <p id="detSinopse"></p>
+            <p id="detTrailerWrapper"><a id="detTrailer" href="" target="_blank">Assistir trailer</a></p>
+        </div>
+
+        <div class="form-actions">
+            <button type="button" class="btn-secondary" onclick="window.location.href='../index.html'">Voltar</button>
+        </div>
+    </div>
+
+    <script src="visualizar.js"></script>
+</body>
+</html>
