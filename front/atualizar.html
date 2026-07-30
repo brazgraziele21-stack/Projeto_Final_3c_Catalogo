@@ -1,74 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editar Filme/Série</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="btn-tema">Alternar Tema</button>
+
     <div class="form-container">
-        <h2>Editar Filme ou Série</h2>
-        <div id="mensagem"></div>
-        <form id="formAtualizar" action="../back/atualizar.php" method="POST">
-            <input type="hidden" name="id" id="idAtualizar" />
+      <h2>Editar Filme ou Série</h2>
 
-            <div class="input-group">
-                <label for="tituloAtualizar">Título:</label>
-                <input type="text" name="titulo" id="tituloAtualizar" required />
-            </div>
+      <div id="mensagem"></div>
 
-            <div class="input-group">
-                <label for="tipoAtualizar">Tipo:</label>
-                <select name="tipo" id="tipoAtualizar" required>
-                    <option value="">Selecione...</option>
-                    <option value="filme">Filme</option>
-                    <option value="serie">Série</option>
-                </select>
-            </div>
+      <form id="formAtualizar" action="../back/atualizar.php" method="POST">
+        <input type="hidden" name="id" id="idAtualizar" />
 
-            <div class="input-group">
-                <label for="generoAtualizar">Gênero:</label>
-                <input type="text" name="genero" id="generoAtualizar" required />
-            </div>
+        <div class="input-group">
+          <label for="tituloAtualizar">Título:</label>
+          <input type="text" name="titulo" id="tituloAtualizar" required />
+        </div>
 
-            <div class="input-group">
-                <label for="dataAtualizar">Data de lançamento:</label>
-                <input type="date" name="data_lancamento" id="dataAtualizar" />
-            </div>
+        <div class="input-group">
+          <label for="tipoAtualizar">Tipo:</label>
+          <select name="tipo" id="tipoAtualizar" required>
+            <option value="">Selecione...</option>
+            <option value="filme">Filme</option>
+            <option value="serie">Série</option>
+          </select>
+        </div>
 
-            <div class="input-group">
-                <label for="capaAtualizar">Capa (link da imagem):</label>
-                <input type="text" name="capa" id="capaAtualizar" />
-            </div>
+        <div class="input-group">
+          <label for="generoAtualizar">Gênero:</label>
+          <input type="text" name="genero" id="generoAtualizar" required />
+        </div>
 
-            <div class="input-group">
-                <label for="trailerAtualizar">Link do trailer:</label>
-                <input type="text" name="trailer" id="trailerAtualizar" />
-            </div>
+        <div class="input-group">
+          <label for="dataAtualizar">Data de lançamento:</label>
+          <input type="date" name="data_lancamento" id="dataAtualizar" />
+        </div>
 
-            <div class="input-group">
-                <label for="avaliacaoAtualizar">Avaliação (0 a 10):</label>
-                <input type="number" name="avaliacao" id="avaliacaoAtualizar" min="0" max="10" step="0.1" />
-            </div>
+        <div class="input-group">
+          <label for="capaAtualizar">Capa (link da imagem):</label>
+          <input type="text" name="capa" id="capaAtualizar" />
+        </div>
 
-            <div class="input-group">
-                <label for="sinopseAtualizar">Sinopse:</label>
-                <textarea name="sinopse" id="sinopseAtualizar"></textarea>
-            </div>
+        <div class="input-group">
+          <label for="trailerAtualizar">Link do trailer:</label>
+          <input type="text" name="trailer" id="trailerAtualizar" />
+        </div>
 
-            <div class="form-actions">
-                <button type="submit" class="btn-primary">Atualizar Dados</button>
-                <button
-                    type="button"
-                    class="btn-secondary"
-                    onclick="window.location.href='../index.html'">
-                    Cancelar
-                </button>
-            </div>
-        </form>
+        <div class="input-group">
+          <label for="avaliacaoAtualizar">Avaliação (0 a 10):</label>
+          <input
+            type="number"
+            name="avaliacao"
+            id="avaliacaoAtualizar"
+            min="0"
+            max="10"
+            step="0.1"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="sinopseAtualizar">Sinopse:</label>
+          <textarea name="sinopse" id="sinopseAtualizar"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Atualizar Dados</button>
+          <button
+            type="button"
+            class="btn-secondary"
+            onclick="window.location.href = '../index.html'"
+          >
+            Cancelar
+          </button>
+        </div>
+      </form>
     </div>
 
     <script src="atualizar.js"></script>
-</body>
+  </body>
 </html>
