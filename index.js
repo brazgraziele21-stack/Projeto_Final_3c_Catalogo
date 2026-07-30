@@ -1,3 +1,10 @@
+const body = document.querySelector("body");
+const btnTema = document.querySelector("#btn-tema");
+
+    btnTema.addEventListener("click", function () {
+    body.classList.toggle("tema-escuro");
+    });
+
 const campoFiltro = document.getElementById("campoFiltro");
 const filtroTipo = document.getElementById("filtroTipo");
 
