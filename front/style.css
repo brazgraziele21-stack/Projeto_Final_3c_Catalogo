@@ -154,9 +154,9 @@ button:hover, .btn-primary:hover {
 }
 
 .form-actions { 
-  margin-bottom: 0; 
-  display: inline-block; 
-  text-align: center; 
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .controles { 
