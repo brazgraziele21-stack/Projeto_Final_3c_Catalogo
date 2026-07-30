@@ -1,3 +1,10 @@
+const body = document.querySelector("body");
+const btnTema = document.querySelector("#btn-tema");
+
+    btnTema.addEventListener("click", function () {
+        body.classList.toggle("tema-escuro");
+    });
+
 const form = document.getElementById("formCadastro");
 const divMensagem = document.getElementById("mensagem");
 
