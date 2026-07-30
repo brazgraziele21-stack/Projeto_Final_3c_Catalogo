@@ -1,3 +1,10 @@
+const body = document.querySelector("body");
+      const btnTema = document.querySelector("#btn-tema");
+
+      btnTema.addEventListener("click", function () {
+        body.classList.toggle("tema-escuro");
+      });
+
 const parametrosDaUrl = new URLSearchParams(window.location.search);
 const id = parametrosDaUrl.get("id");
 
